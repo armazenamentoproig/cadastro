@@ -1,5 +1,5 @@
 <?php
-include('conexao.php');
+include('_env');
 
 $nome  = $_POST["nome"];
 $email = $_POST["email"];
