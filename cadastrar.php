@@ -1,5 +1,5 @@
 <?php
-include('.env');
+include('app.js');
 
 $nome  = $_POST["nome"];
 $email = $_POST["email"];
