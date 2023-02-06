@@ -1,8 +1,8 @@
 <?php
 
 $servidor = "aws-sa-east-1.connect.psdb.cloud";
-$usuario = "smwtjehkm3ky0z8zzbvj"; 			                               //Necessário inserir nome de usuario do Mysql entre aspas
-$senha = "pscale_pw_b9NXLvxy1gtj3EJA7JrPitgv48QPwqeXjm03FzDKjH8";			//Necessário inserir senha de usuario utilizado do Mysql entre aspas
+$usuario = "hdybqc8evprjhf5k7pou"; 			                               //Necessário inserir nome de usuario do Mysql entre aspas
+$senha = "pscale_pw_KPtKppMAuY2FMSFcSGmx68auXqViSE1NCqPVqYuAfj4";			//Necessário inserir senha de usuario utilizado do Mysql entre aspas
 $dbname = "formulario";	//Informar o nome do banco de dados
 
 //Criar a conexao
