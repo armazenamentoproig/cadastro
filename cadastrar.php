@@ -1,5 +1,5 @@
 <?php
-include('_env');
+include('.env');
 
 $nome  = $_POST["nome"];
 $email = $_POST["email"];
