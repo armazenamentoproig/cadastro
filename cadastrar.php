@@ -1,5 +1,5 @@
 <?php
-include('app.js');
+include('schema.prisma');
 
 $nome  = $_POST["nome"];
 $email = $_POST["email"];
