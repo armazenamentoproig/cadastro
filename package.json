@@ -1,4 +1,14 @@
 {
+  "name": "cadastro",
+  "version": "0.1.0",
+  "private": "false",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
@@ -8,6 +18,8 @@
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
     "@prisma/client": "^4.9.0",
+    "dotenv": "^16.0.3",
+    "mysql2": "^3.1.0",
     "next-auth": "^4.19.2"
   }
 }
