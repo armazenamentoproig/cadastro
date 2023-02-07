@@ -25,3 +25,4 @@ if (mysqli_query($conn, $cad_usuario)) {
 }
 mysqli_close($conn);
 ?>
+
