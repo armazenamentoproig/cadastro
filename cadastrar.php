@@ -1,5 +1,5 @@
 <?php
-include('schema.prisma');
+include('conexao.php');
 
 $nome  = $_POST["nome"];
 $email = $_POST["email"];
@@ -11,6 +11,10 @@ echo "<h3>email:  $email</h3>";
 echo "<h3>senha:  $senha</h3>";
 echo "<h3>Opina:  $opina</h3></br></br></br>";
 
+$conn = mysqli_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"]);
+if (!$conn) {
+    die("Falha na conexão: " . mysqli_connect_error());
+}
 
 $cad_usuario = "INSERT INTO usuario (nome, email, senha, opina) VALUES ('$nome', '$email', '$senha', '$opina')";
 
@@ -20,5 +24,5 @@ if (mysqli_query($conn, $cad_usuario)) {
       echo "Erro: " . $cad_usuario . "</br>" . mysqli_error($conn);
 }
 mysqli_close($conn);
-
 ?>
+
