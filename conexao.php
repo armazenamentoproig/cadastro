@@ -1,4 +1,13 @@
 <?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// o resto do seu código aqui...
+
+
 $db_host = getenv("HOST");
 $db_user = getenv("USERNAME");
 $db_password = getenv("PASSWORD");
