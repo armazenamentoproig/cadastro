@@ -7,8 +7,6 @@ $dotenv->load();
 
 // o resto do seu código aqui...
 
-require_once('conexão.php');
-
 $conn = mysqli_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"]);
 if (!$conn) {
     die("Falha na conexão: " . mysqli_connect_error());
