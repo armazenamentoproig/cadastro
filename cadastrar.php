@@ -1,12 +1,10 @@
 <?php
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 // o resto do seu código aqui...
-
 
 include('conexao.php');
 
@@ -24,7 +22,6 @@ $conn = mysqli_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_EN
 if (!$conn) {
     die("Falha na conexão: " . mysqli_connect_error());
 }
-
 $cad_usuario = "INSERT INTO usuario (nome, email, senha, opina) VALUES ('$nome', '$email', '$senha', '$opina')";
 
 if (mysqli_query($conn, $cad_usuario)) {
