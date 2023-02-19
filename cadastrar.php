@@ -5,9 +5,6 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 // o resto do seu código aqui...
-
-include('conexao.php');
-
 $nome  = $_POST["nome"];
 $email = $_POST["email"];
 $senha = $_POST["senha"];
